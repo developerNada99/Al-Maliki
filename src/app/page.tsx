@@ -51,16 +51,16 @@ export default function Home() {
       ))}
 
       {/* محتوى الصفحة */}
-      <div className="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white px-4">
-  <h1 className="text-4xl md:text-6xl font-bold mb-7">مرحبًا بك في مكتب عبدالكريم المالكي للخدمات العامه</h1>
-  <p className="text-lg md:text-2xl mb-20 text-gray-400">نحن نقدم مجموعة متكاملة من الخدمات العامة التي تلبي احتياجات الأفراد والشركات، ونسعى دائمًا لتقديم حلول فعالة ومبتكرة تضمن رضا عملائنا وتعزز من جودة تجربتهم معنا.</p>
+      <div className="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white ">
+  <h1 className="text-4xl md:text-6xl font-bold mb-7 max-md:text-4xl">مرحبًا بك في مكتب عبدالكريم المالكي للخدمات العامه</h1>
+  <p className="text-lg md:text-2xl mb-40 text-gray-400">نحن نقدم مجموعة متكاملة من الخدمات العامة التي تلبي احتياجات الأفراد والشركات، ونسعى دائمًا لتقديم حلول فعالة ومبتكرة تضمن رضا عملائنا وتعزز من جودة تجربتهم معنا</p>
 </div>
 
 {/* قسم في الأسفل يحتوي على dddd والزرار */}
 <div className="absolute bottom-8 left-0 w-screen z-20 text-center pb-6 ">
   <div className="bg-white/55 h-24 flex items-center justify-center gap-5 px-11">
   {logos.map((logo, index) => (
-    <div key={index} className="relative w-72 h-72">
+    <div key={index} className="relative w-72 h-72 max-md:w-60 max-md:h-60">
       <Image
         src={logo}
         alt={`Logo ${index}`}
