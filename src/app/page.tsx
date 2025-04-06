@@ -51,9 +51,9 @@ export default function Home() {
       ))}
 
       {/* محتوى الصفحة */}
-      <div className="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white ">
-  <h1 className="text-4xl md:text-6xl font-bold mb-7 max-md:text-4xl">مرحبًا بك في مكتب عبدالكريم المالكي للخدمات العامه</h1>
-  <p className="text-lg md:text-2xl mb-40 text-gray-400">نحن نقدم مجموعة متكاملة من الخدمات العامة التي تلبي احتياجات الأفراد والشركات، ونسعى دائمًا لتقديم حلول فعالة ومبتكرة تضمن رضا عملائنا وتعزز من جودة تجربتهم معنا</p>
+      <div className="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center flex-col items-center w-full text-white ">
+  <h1 className="text-4xl md:text-6xl font-bold mb-7 max-md:text-4xl text-center">مرحبًا بك في مكتب عبدالكريم المالكي للخدمات العامه</h1>
+  <p className="text-lg md:text-2xl mb-40 text-gray-400 text-center">نحن نقدم مجموعة متكاملة من الخدمات العامة التي تلبي احتياجات الأفراد والشركات، ونسعى دائمًا لتقديم حلول فعالة ومبتكرة تضمن رضا عملائنا وتعزز من جودة تجربتهم معنا</p>
 </div>
 
 {/* قسم في الأسفل يحتوي على dddd والزرار */}
