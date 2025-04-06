@@ -16,6 +16,7 @@ const logos = [
   "/photos/logo_5.jpg",
   "/photos/logo_3.jpg",
   "/photos/logo_1.jpg",
+  "/photos/logo_6.svg"
 ];
 
 export default function Home() {
