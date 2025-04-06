@@ -110,9 +110,10 @@ export default function Home() {
   <div>حل ملاحظة حماية الاجور</div>
 </motion.div>
 
-         <button className="bg-white text-black mt-16 py-2 px-6 rounded-full hover:bg-[#0f635c] hover:text-white transition-all duration-500 ease-in-out">
+         <button className="bg-white text-black mt-16 py-2 px-6 rounded-full hover:bg-[#0f635c] hover:text-white active:bg-[#0f635c] active:text-white transition-all duration-500 ease-in-out">
   تواصل معنا
 </button>
+
 
 
         </div>
