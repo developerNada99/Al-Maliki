@@ -10,7 +10,7 @@ const images = [
   "/photos/home_4.jpg",
 ];
 const logos = [
-  "/photos/logo_2.jpg",
+  "/photos/logo_2.svg",
   "/photos/logo_4.jpg",
   "/photos/logo_5.jpg",
   "/photos/logo_3.jpg",
