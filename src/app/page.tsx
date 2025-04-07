@@ -19,6 +19,27 @@ const logos = [
   "/photos/logo_6.svg"
 ];
 
+const services = [
+  "خدمات الجوازات",
+  "نقل معلومات جوازين",
+  "تمديد بقرض التجديد",
+  "تمديد بختم السفارة",
+  "تمديد صلاحية 3شهور",
+  "نقل مهني مربوط",
+  "نقل وتعديل",
+  "خدمات بلدي",
+  "شهادة سلامة",
+  "عقد نظافه",
+  "تقرير فني",
+  "شهادة صحية",
+  "خدمات قوى",
+  "اصدار تأشيرات",
+  "نقل عمال",
+  "تعديل مهنة",
+  "تدبيل كرت العمل",
+  "حل ملاحظة حماية الاجور",
+];
+
 export default function Home() {
   const [current, setCurrent] = useState(0);
 
@@ -32,7 +53,7 @@ export default function Home() {
 
   return (
     <div className="overflow-x-hidden">
-      {/* ✅ الهيدر – لوجوهات فوق الصفحة */}
+      
       <div className="w-full z-20 bg-white">
         <div className="flex flex-wrap justify-center items-center gap-5">
           {logos.map((logo, index) => (
@@ -51,9 +72,9 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ✅ الخلفية والمحتوى */}
+      
       <div className="relative w-screen h-screen overflow-hidden">
-        {/* الخلفيات المتغيرة */}
+        
         {images.map((img, index) => (
           <div
             key={index}
@@ -74,6 +95,12 @@ export default function Home() {
 
         {/* محتوى الصفحة */}
         <div className="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center flex-col items-center w-full text-white">
+          
+          <button className="bg-white text-black mb-11 py-4 px-10 text-xl rounded-full hover:bg-[#0f635c] hover:text-white transition-all duration-500 ease-in-out">
+  تواصل معنا
+</button>
+
+          
           <h1 className="text-4xl md:text-6xl font-bold mb-7 max-md:text-4xl text-center">
             مرحبًا بك في مكتب عبدالكريم المالكي للخدمات العامه
           </h1>
@@ -81,39 +108,23 @@ export default function Home() {
             نحن نقدم مجموعة متكاملة من الخدمات العامة التي تلبي احتياجات الأفراد والشركات، ونسعى دائمًا لتقديم حلول فعالة ومبتكرة تضمن رضا عملائنا وتعزز من جودة تجربتهم معنا
           </p>
 
-          {/* خدمة متحركة */}
+          
           <motion.div
   className="service flex text-3xl gap-8 whitespace-nowrap"
-  animate={{ x: ["100%", "-100%"] }}
+  animate={{ x: ["0%", "-100%"] }}
   transition={{
-    duration: 60, // Increased duration for slower speed
+    duration: 60,
     repeat: Infinity,
     ease: "linear",
   }}
 >
-  <div>خدمات الجوازات</div>
-  <div>نقل معلومات جوازين</div>
-  <div>تمديد بقرض التجديد</div>
-  <div>تمديد بختم السفارة</div>
-  <div>تمديد صلاحية 3شهور</div>
-  <div>نقل مهني مربوط</div>
-  <div>نقل وتعديل</div>
-  <div>خدمات بلدي</div>
-  <div>شهادة سلامة</div>
-  <div>عقد نظافه</div>
-  <div>تقرير فني</div>
-  <div>شهادة صحية</div>
-  <div>خدمات قوى</div>
-  <div>اصدار تأشيرات</div>
-  <div>نقل عمال</div>
-  <div>تعديل مهنة</div>
-  <div>تدبيل كرت العمل</div>
-  <div>حل ملاحظة حماية الاجور</div>
+  {[...services, ...services].map((service, index) => (
+    <div key={index} className="text-white">
+      {service}
+    </div>
+  ))}
 </motion.div>
-
-         <button className="bg-white text-black mt-16 py-2 px-6 rounded-full hover:bg-[#0f635c] hover:text-white transition-all duration-500 ease-in-out">
-  تواصل معنا
-</button>
+        
 
 
         </div>
