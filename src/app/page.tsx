@@ -96,9 +96,15 @@ export default function Home() {
         {/* محتوى الصفحة */}
         <div className="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center flex-col items-center w-full text-white">
           
-          <button className="bg-white text-black mb-11 py-4 px-10 text-xl rounded-full hover:bg-[#0f635c] hover:text-white transition-all duration-500 ease-in-out">
-  تواصل معنا
-</button>
+         <a 
+  href="https://wa.me/966542050581" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="bg-white cursor-pointer text-black mb-11 py-4 px-10 text-xl rounded-full hover:bg-[#0f635c] hover:text-white transition-all duration-500 ease-in-out">
+    تواصل معنا
+  </button>
+</a>
 
           
           <h1 className="text-4xl md:text-6xl font-bold mb-7 max-md:text-4xl text-center">
