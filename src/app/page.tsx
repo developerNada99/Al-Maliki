@@ -108,22 +108,23 @@ export default function Home() {
             نحن نقدم مجموعة متكاملة من الخدمات العامة التي تلبي احتياجات الأفراد والشركات، ونسعى دائمًا لتقديم حلول فعالة ومبتكرة تضمن رضا عملائنا وتعزز من جودة تجربتهم معنا
           </p>
 
-          
-          <motion.div
-  className="service flex text-3xl gap-8 whitespace-nowrap"
-  animate={{ x: ["0%", "-100%"] }}
-  transition={{
-    duration: 60,
-    repeat: Infinity,
-    ease: "linear",
-  }}
->
-  {[...services, ...services].map((service, index) => (
-    <div key={index} className="text-white">
-      {service}
+         <div className="overflow-hidden w-full bg-transparent mt-10">
+      <motion.div
+        className="flex text-3xl gap-16 whitespace-nowrap min-w-fit"
+        animate={{ x: ["0%", "-50%"] }}
+        transition={{
+          duration: 50, 
+          repeat: Infinity,
+          ease: "linear",
+        }}
+      >
+        {[...services, ...services].map((service, index) => (
+          <div key={index} className="text-white">
+            {service}
+          </div>
+        ))}
+      </motion.div>
     </div>
-  ))}
-</motion.div>
         
 
 
